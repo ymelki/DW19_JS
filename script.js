@@ -34,7 +34,12 @@ SUCRE=80;
 console.error("Nous avons du SEL en Q. de " + SEL + ". Nous avons du sucre en quantité de " + SUCRE)
 
 // VOTRE CODE INVERSE LES VARIABLES
-// Nous avons du SEL en Q. de 80  Nous avons du sucre en quantité de 100
 
+// CREEZ UN USTENSIL / VARIABLE QUI SERT DE MEMOIRE
+TEMP=SEL // TEMP SAUVEGARDE AVEC LA VALEUR DE SEL
+SEL=SUCRE // SEL ON PEUT L ECRASER AVEC LA DE SUCRE
+SUCRE=TEMP // SUCRE ON PEUT GARDER LA VALEUR DE SEL
+ // SEL NE PAS CONTENIR LA VALEUR DU SUCRE INITIAL CAR IL A ETE ECRASE
 
 console.error("Nous avons du SEL en Q. de " + SEL + ". Nous avons du sucre en quantité de " + SUCRE)
+// Nous avons du SEL en Q. de 80  Nous avons du sucre en quantité de 100
