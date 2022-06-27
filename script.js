@@ -27,3 +27,8 @@ b=90 // B va contenir 90
 console.error(a+parseInt(c));
 console.error(typeof(c));
 console.error(b);
+
+// EXO : LES VARIABLES
+SEL=100;
+SUCRE=80;
+console.error("Nous avons du SEL en Q. de " + SEL + ". Nous avons du sucre en quantité de " + SUCRE)
