@@ -44,3 +44,12 @@ function recup_age(){
 
 recup_age()
 
+// fonction avec des parametres
+function afficher(prenom) {
+// description
+  console.error("Bonjour " + prenom)
+}
+// appel
+afficher("Yoel")
+afficher("Robert")
+afficher("Axel")
