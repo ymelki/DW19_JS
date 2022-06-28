@@ -82,7 +82,7 @@ for (h=1;h<11;h++){
 /**
  * EXO 4 : Afficher toutes  les tables dES ADDITIONS  dans la console
  */
- 
+ /*
  for (h=1;h<11;h++){
     console.error(" TABLE DE " + h)
 
@@ -93,8 +93,17 @@ for (h=1;h<11;h++){
    
     }
 }
+*/
 
+//  EXO 5 : Afficher le caractere "*"   100
+for (a=1; a<11;a++){
+    console.error ("*")
+}
 
+//EXO 6 Faire un carre d etoile de 5 
+for (b=1;b<6;b++){
+    console.error(b+"*****")
+}
 /**
  * EXO 5 : Afficher le caractere "*"   100
  * 
