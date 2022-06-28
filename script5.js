@@ -20,7 +20,16 @@ console.error(document.getElementById("madiv"))
  * 
  * 
  * Modifier le html d'une div on utilier innerHTML
- */2. 
+ */
+
+/**
+ * EXO 1 LORSQU ON CLIQUE SUR LE BOUTON IL Y A UNE ALERT AFFICHANT BIENVENUE SUR LE BOUTTON
+ * 2 LORSQU ON CLIQUE SUR LE BOUTON IL Y A UNE ALERT AFFICHANT CE QUI ECRIT SUR LE BOUTON
+   3 Lorsqu on clique sur le bouton on affiche dans la div le contenue du champs texte
+
+   4 on affiche dans la div le contenue du "Le texte contient : " champs texte
+   5  on affiche dans la div le contenue du "Le prix est  : " champs texte La TVA est champs texte*1.2
+ */
 
 
 
