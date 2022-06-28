@@ -53,3 +53,32 @@ function afficher(prenom) {
 afficher("Yoel")
 afficher("Robert")
 afficher("Axel")
+// EX1  Ecrire une fonction avec un parmetre numerique puis affichez ce nombre en ajoutant 2
+
+function numerique(nombre){
+    nombre=nombre+2
+    console.error("afficher " + nombre )
+}
+numerique(10)
+
+
+// EX2  Ecrire une fonction avec un parmetre numerique puis affichez si ce nombre est positif ou negatif
+function afficher_num(nombre){
+    if (nombre > 0   )  {
+        console.error("Le nombre est positif")
+    }
+    else  {
+        console.error("Le nombre est négatif")
+    }
+}
+
+// EX3  Ecrire une fonction avec un parmetre numerique puis affichez si ce nombre est pair ou impair
+
+function pair(nombre){
+    if (( nombre % 2   ) == 0 ) {
+        console.error("Ce nombre est pair")
+    }
+    else {
+        console.error("Ce nombre est impair")
+    }
+}
