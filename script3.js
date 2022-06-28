@@ -32,8 +32,8 @@ for (i=100;i<200;i++){
  */
 
 for (i=1;i<11; i++){
-    result=i*2
-    console.error("2*"+i+"="+result)
+   // result=i*2
+   // console.error("2*"+i+"="+result)
 }
 
 /**
@@ -44,5 +44,58 @@ for (i=1;i<11; i++){
  * 2*2=4
  * 2*3=6
  * 
+ * 
+ */
+
+
+// DOUBLE BOUCLE // 
+// Les nombre de 1 à 9
+// Les nombre de 1 faire une action à 9
+// boucle 1
+/*for (i=0;i<9;i++){
+     console.error("boucle 1 " + i)
+     // boucle 2
+     for (j=0;j<3;j++){
+        console.error("je rentre dans la boucle 2 : " + j )
+         
+    }
+ }
+ */
+
+
+/**
+ * EXO 3 : Afficher toutes  les tables de multiplication  dans la console
+ */
+for (h=1;h<11;h++){
+    console.error(" TABLE DE " + h)
+
+
+    for (j=1;j<11;j++){
+       
+        console.error( h  + " * " + j + " = "  + h * j       )
+   
+    }
+}
+
+/**
+ * EXO 4 : Afficher toutes  les tables dES ADDITIONS  dans la console
+ */
+ 
+
+
+
+/**
+ * 
+ * Combien de multiplitaction 9 on va devoir de 1 à 10
+ * Combien de multiplitaction 9 on va devoir de 1 à 10
+ * 
+ * 1*1=1
+ * 1*2=2
+ * 
+ * 2*1=2
+ * 2*2=4
+ * 
+ * 3*1
+ * 3*2
  * 
  */
