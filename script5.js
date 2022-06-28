@@ -40,5 +40,9 @@ function mafonction(){
    // EXO 2
    
 
-
+/**
+ * EXO 6
+ * ECRIRE une fonction qui affiche dans la div ce qu il y a dans le champs texte .
+ * Cette fonction se declenche au moment ou vous tapez du texte dans le champs texte
+ */
 
