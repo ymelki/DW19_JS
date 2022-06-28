@@ -70,3 +70,33 @@ console.error("L'utilisateur aura " + AGEPLUSDEUX + " ans")
 A=25;
 B=A+2
 console.error(B); // 27
+
+
+/*
+EXO 3 :
+1. DEMANDER UN PRIX D UN ARTICLE VIA LA COMMANDE PROMPT
+2. Affichez DANS LA CONSOLE : l'article vaut 45 euros. 45 etant le prix
+3. Affichez DANS LA CONSOLE : l'article vaut 54 euros TTC . prix * 1.2
+*/
+PRICE = prompt("Veuillez entré LE PRIX DE L ARTICLE ?"); // variable age va contenir le texte entré par l'uti.
+console.error("L ARTICLE VAUT  " + PRICE + " EUROS");
+PRICE_TTC=parseInt(PRICE)*1.2
+
+console.error("L ARTICLE VAUT  " + PRICE_TTC + " ttc");
+
+
+/**
+ * 
+ * Exo 4  : afficher dans la consolle aujourdui nous somme le DATEDUJOUR
+ * 
+ */
+date=new Date();
+console.error(date);
+day = date.getDate();
+MOIS = date.getMonth()  + 1 ;
+annee=date.getFullYear()
+console.error(day + " " + MOIS + " " + annee)
+
+
+
+
