@@ -63,3 +63,14 @@ else  {
      console.error("le nombre est impair")
  }
  
+/**
+ * 
+ * EXO 3
+ * Initialiser une variable avec votre prenom
+ * prenom=yoel
+ * vous demandez à l'utilisateur son prenom
+ * si le prenom == à votre prenom alors on ecrit dans la console
+ * sympa vous avez le même prenom que moi
+ * si non rien ...
+ * 
+ */
