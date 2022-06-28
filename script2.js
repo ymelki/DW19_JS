@@ -38,6 +38,15 @@ if (age==18){ // tester l egalité de la valeur entre deux informations
  * AFficher dans la console si ce le nombre est positif ou négatif
  * 
  */
+nombre = prompt("veuillez rentrer un numéro ! ") // ouvre un tiroire pour le nombre entré par l'utilisateur
+nombre=parseInt(nombre) // convertir la chaine de caractere en nombre
+if ( nombre > 0   )  {
+    console.error("le nombre est positif")
+}
+else  {
+    console.error("le nombre est négatif")
+}
+
 
 /**
  * EX 2 : 
@@ -45,3 +54,12 @@ if (age==18){ // tester l egalité de la valeur entre deux informations
  * AFficher dans la console si ce le nombre est pair ou impair
  * 
  */
+ nombre = prompt("veuillez rentrer un numéro ! ") // ouvre un tiroire pour le nombre entré par l'utilisateur
+ nombre=parseInt(nombre) // convertir la chaine de caractere en nombre
+ if ( (nombre % 2) == 0   )  {
+     console.error("le nombre est pair")
+ }
+ else  {
+     console.error("le nombre est impair")
+ }
+ 
