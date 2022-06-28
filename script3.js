@@ -66,6 +66,7 @@ for (i=1;i<11; i++){
 /**
  * EXO 3 : Afficher toutes  les tables de multiplication  dans la console
  */
+/*
 for (h=1;h<11;h++){
     console.error(" TABLE DE " + h)
 
@@ -76,15 +77,33 @@ for (h=1;h<11;h++){
    
     }
 }
+*/
 
 /**
  * EXO 4 : Afficher toutes  les tables dES ADDITIONS  dans la console
  */
  
+ for (h=1;h<11;h++){
+    console.error(" TABLE DE " + h)
 
+
+    for (j=1;j<11;j++){
+       
+        console.error( h  + " + " + j + " = "  + (h + j)       )
+   
+    }
+}
 
 
 /**
+ * EXO 5 : Afficher le caractere "*"   100
+ * 
+ * EXO 6 Faire un carre d etoile de 5 
+ *   1 *****
+ *   2 *****
+ *   3 *****
+ *   4 *****
+ *   5 *****
  * 
  * Combien de multiplitaction 9 on va devoir de 1 à 10
  * Combien de multiplitaction 9 on va devoir de 1 à 10
