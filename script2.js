@@ -74,3 +74,11 @@ else  {
  * si non rien ...
  * 
  */
+
+// la variable prenom recoit la saisie utilisateur EX : prenom=Yoel
+monprenom="Yoel"
+prenom=prompt("Quel est votre prénom ? ");
+// la variable mike recoit ce qui est dans la variable prenom mike=Yoel
+if ( prenom==monprenom ) {
+    console.error("sympa vous avez le même prenom que moi")
+}
