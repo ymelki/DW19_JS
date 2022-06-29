@@ -93,4 +93,14 @@ function ramenetab(tab){
 }
 console.table(ramenetab([34,234,55]))
 
+/**
+ * Fonction qui vont prendre en parametre un tableau qui retourne
+ *  EXO 1 : le nombre d'éléments dans un tableau
+ *  EXO 2 : la somme des éléments d'un tableau
+ *  EXO 3 : 'élément maximum d'un tableau
+ *  EXO 4 : l'élément minimum d'un tableau
+ *  EXO 5 : Trouver le premier élément supérieur à 500
+ *  BONUS : Copier les premiers éléments d'un tableau dont la somme fait au moins 500
+
+ */
 
