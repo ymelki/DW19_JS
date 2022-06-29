@@ -83,6 +83,9 @@ function mafonction3() {
  * 5. CREEZ LA FONCTION CORRESPONDANT
  * 6. QUELS SONT / EST L ELEMENT HTML DONT VOUS AVEZ BESOIN 
  * 6. APPLIQUER SUR LES CHAMPS HTML CE QUI EST DEMANDE
+ * QU EST CE QUE JE VEUX RECUPERER / BESOIN
+ * TRAITER SOUS FORME DE VARIABLE
+ * CIBLER => AFFICHER
  * 
  */
 
@@ -108,8 +111,28 @@ function mafonction4(){
 }
 
 /**
- * CREEZ UN CHAMP TEXTE, UN BOUTON, UNE DIV
- * DANS LE CHAMPS TEXTE SI ON INSERE UN NOMBRE
+ * CREEZ UN CHAMP TEXTE, UN BOUTON, UNE DIV 
+ * DANS LE CHAMPS TEXTE SI ON INSERE UN NOMBRE EX : 4
  * LORSQU ON CLIQUE
- * DANS LA DIV ON A LA TABLE DE MULTIPLICATION CORRESPONDANTE
+ * DANS LA DIV ON A LA TABLE DE MULTIPLICATION CORRESPONDANTE : TABLE DE 4 
  */
+document.getElementById("multiplication_boutton").addEventListener("click", multuplication_fonction)
+
+function multuplication_fonction(){
+    // 1. RECUPERER CE QUI A DANS L INPUT TEXTE  
+    numero=parseInt(document.getElementById("multiplication_texte").value)
+    console.error(numero)
+
+
+
+    // 2. MODIFIER LA DIV
+    document.getElementById("multiplication_div").innerHTML="Table de " + numero
+ 
+    // 3. MULTIPLICATION AVEC LA BOUCLE FOR
+    for (i=1;i<10;i++){
+        document.getElementById("multiplication_div").innerHTML+="<br />" + numero+" * "+ i + " = " + (numero * i ) 
+        console.error(i)
+    }
+    
+
+}
