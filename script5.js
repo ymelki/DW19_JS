@@ -143,3 +143,29 @@ function multuplication_fonction(){
  * SI J ECRIS DANS LE CHAMPS TEXTE LE NOMBRE 5
  * JE VAIS AVOIR LE RESULTAT 1 + 2 + 3 + 4 + 5 = 
  */
+
+document.getElementById("SOMME_boutton").addEventListener("click", sommef)
+function sommef(){
+    // 1 DE QUOI ON A BESOIN  CHAMP TEXTE
+    nb=parseInt(document.getElementById("SOMME_texte").value)
+    
+
+
+
+    // On affiche dans la div LE NOMBRE DE 5 + 4 + 3 +2 +1 
+
+    SOMME=0
+
+    for (i=1; i<=nb ; i++    ){
+        SOMME=SOMME+i
+
+        document.getElementById("SOMME_div").innerHTML+=i+" + "
+      
+    }
+       
+    document.getElementById("SOMME_div").innerHTML+= " = " +  SOMME
+
+   
+
+
+}
