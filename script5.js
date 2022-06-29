@@ -61,6 +61,8 @@ document.getElementById("monboutton").addEventListener(  "click", mafonction    
 document.getElementById("boutton").addEventListener(  "click", alert2       )
 
 // CREEZ UNE FONCTION QUI AFFICHE  DANS LA DIV UN NUMERO QUI S INCREMENTE DE 1 A CHAQUE FOIS QUE LON CLIQUE SUR LE BOUTON
+document.getElementById("boutton3").addEventListener( "click" , mafonction3  )
+ 
  
 function mafonction3() {
     
@@ -69,3 +71,45 @@ function mafonction3() {
     document.getElementById("madiv2").innerHTML=compteur;
  
 }
+
+//CREEZ UNE FONCTION QUI AFFICHE DANS LA DIV SI L AGE DANS LE TEXTE EST > 18 OU < EN ECRIVANT MAJEUR OU MINEUR
+/**
+ * CREEZ UNE FONCTION 
+ * 
+ * 1. REFLECHIR A LA QUESTION
+ * 2. QUEL EST L EVENEMENT ?  CLICK
+ * 3. SUR QUEL ELEMENT HTML L EVENEMENT SE DECLENCHE ? BOUTON
+ * 4. CODEZ LE ADDEVENTLISTNER
+ * 5. CREEZ LA FONCTION CORRESPONDANT
+ * 6. QUELS SONT / EST L ELEMENT HTML DONT VOUS AVEZ BESOIN 
+ * 6. APPLIQUER SUR LES CHAMPS HTML CE QUI EST DEMANDE
+ * 
+ */
+
+
+document.getElementById("boutton4").addEventListener("click",   mafonction4   )
+
+function mafonction4(){
+   // 1 RECUPERER LE CHAMPS INPUT AGE DANS LA VARIABLE AGE
+    age= parseInt(document.getElementById("age").value)
+ 
+
+   // 2 CONDITION TESTER SI L AGE EST > ou < 
+   if (age > 18 ) {
+       document.getElementById("madiv").innerHTML="vous etes majeur"
+       console.error("vous etes majeur")
+   }
+   else {
+    document.getElementById("madiv").innerHTML="vous etes mineur"
+
+       console.error("vous etes mineur")
+   } 
+
+}
+
+/**
+ * CREEZ UN CHAMP TEXTE, UN BOUTON, UNE DIV
+ * DANS LE CHAMPS TEXTE SI ON INSERE UN NOMBRE
+ * LORSQU ON CLIQUE
+ * DANS LA DIV ON A LA TABLE DE MULTIPLICATION CORRESPONDANTE
+ */
