@@ -136,3 +136,10 @@ function multuplication_fonction(){
     
 
 }
+
+/**
+ * EXO 1 : LES IF ?
+ * EXO 2 : CREEZ UN CHAMP TEXTE, UN BOUTON, UNE DIV 
+ * SI J ECRIS DANS LE CHAMPS TEXTE LE NOMBRE 5
+ * JE VAIS AVOIR LE RESULTAT 1 + 2 + 3 + 4 + 5 = 
+ */
