@@ -82,6 +82,15 @@ console.log(moyenneindef([12,14]))
  * ET VOUS RENVOYER LE NOUVEAU TABLEAU
  * ET VOUS L AFFICHER
  */
+// EXO 1 & 2
+function ramenetab(tab){
 
+    let TEMP=tab[0] // recupere l indice 0 dans la variable TEMP 34
+    tab[0]=tab[1] // TAB[0] 234
+    tab[1]=TEMP
+ 
+    return tab
+}
+console.table(ramenetab([34,234,55]))
 
 
