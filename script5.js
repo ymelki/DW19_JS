@@ -147,7 +147,7 @@ function multuplication_fonction(){
 document.getElementById("SOMME_boutton").addEventListener("click", sommef)
 function sommef(){
     // 1 DE QUOI ON A BESOIN  CHAMP TEXTE
-   let  nb=parseInt(document.getElementById("SOMME_texte").value)
+   let  nb=parseInt(document.getElementById("SOMME_texte").value) // PARSINT => X
     // ON VERFIE SI CE NOMBRE EST BIEN UN NOMBRE DANS CE CAS ON CONTINUE SI NON ON S ARRETE 
     console.error(nb)
 
