@@ -1,0 +1,30 @@
+/**
+ * 
+ * CREATION DE VARIABLE
+ * x=3
+ * 
+ * 
+ */
+
+let x=3
+var y=2
+const z=7 
+// a="test3"
+function test(){
+    let a="test"
+}
+let a="test2"
+
+test()
+console.log(a) // AFFICHE ?
+
+
+/**
+ * CREEZ UNE FONCTION QUI AURA DEUX PARAMETRE QUI VA CALCULER LA MOYENNE DE 2 NOMBRE
+ * MOYENNE(12,14)
+ * CREEZ UNE FONCTION QUI AURA DEUX PARAMETRE QUI VA CALCULER LA MOYENNE DE 3 NOMBRE
+ * CREEZ UNE FONCTION QUI AURA DEUX PARAMETRE QUI VA CALCULER LA MOYENNE DE 4 NOMBRE
+ */
+
+
+

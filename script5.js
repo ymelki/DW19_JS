@@ -147,25 +147,23 @@ function multuplication_fonction(){
 document.getElementById("SOMME_boutton").addEventListener("click", sommef)
 function sommef(){
     // 1 DE QUOI ON A BESOIN  CHAMP TEXTE
-    nb=parseInt(document.getElementById("SOMME_texte").value)
-    
+   let  nb=parseInt(document.getElementById("SOMME_texte").value)
+    // ON VERFIE SI CE NOMBRE EST BIEN UN NOMBRE DANS CE CAS ON CONTINUE SI NON ON S ARRETE 
+    console.error(nb)
 
-
-
+    if (isNaN(nb)) {
+        return;
+    }
+     
     // On affiche dans la div LE NOMBRE DE 5 + 4 + 3 +2 +1 
 
-    SOMME=0
+    SOMME=1
 
     for (i=1; i<=nb ; i++    ){
-        SOMME=SOMME+i
-
-        document.getElementById("SOMME_div").innerHTML+=i+" + "
-      
-    }
-       
-    document.getElementById("SOMME_div").innerHTML+= " = " +  SOMME
-
-   
-
-
+        
+        SOMME=SOMME*i
+        console.error(SOMME)
+        document.getElementById("SOMME_div").innerHTML+=i+" * " 
+    } 
+    document.getElementById("SOMME_div").innerHTML+= " = " +  SOMME 
 }
