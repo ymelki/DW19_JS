@@ -59,3 +59,13 @@ document.getElementById("montexte").addEventListener(  "input", mafonction2     
 
 document.getElementById("monboutton").addEventListener(  "click", mafonction       )
 document.getElementById("boutton").addEventListener(  "click", alert2       )
+
+// CREEZ UNE FONCTION QUI AFFICHE  DANS LA DIV UN NUMERO QUI S INCREMENTE DE 1 A CHAQUE FOIS QUE LON CLIQUE SUR LE BOUTON
+ 
+function mafonction3() {
+    
+    compteur=parseInt(document.getElementById("madiv2").innerHTML);
+    compteur=(compteur*2);
+    document.getElementById("madiv2").innerHTML=compteur;
+ 
+}
