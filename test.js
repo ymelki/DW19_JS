@@ -12,6 +12,7 @@ for (i=0;i<TAB.length;i++){
  *  EXO 3 : l'élément maximum d'un tableau
  *  EXO 4 : l'élément minimum d'un tableau
  *  EXO 5 : Trouver le premier élément supérieur à 500
+ * EXO 6  :  Trouver le premier élément supérieur à un nombre que vous allez definir
  *  BONUS : Copier les premiers éléments d'un tableau dont la somme fait au moins 500
  */
 
@@ -52,11 +53,35 @@ function maxtab(Tableau){
   
 }
 
-let tab=[234,45,34,45,99999999999999]
+function mintab(Tableau){
+    let REF_MIN=Tableau[0]
+    for (let i=0; i < tab.length; i++){
+        if ( Tableau[i] < REF_MIN  ) {  REF_MIN=Tableau[i]  }
+    }
+    return REF_MIN
+}
+
+function supcinq(Tableau  , n ){
+    for (let i=0;i<Tableau.length;i++ ){
+        if ( Tableau[i]  > n   ) {  return Tableau[i]  }
+    }
+}
+
+/**
+ * Fonction qui
+ * 1 prend en parametre un nombre et qui va renvoyer vrai si il est positif  ou faux si il est negatif
+ * 2 prend en parametre un nombre et qui va renvoyer vrai si il est pair  ou faux si il est impair
+ * 3 prend en parametre une chaine de caracter et qui va renvoyer vrai si il est = à votre prenom
+ * 4 prend en parametre une chaine de caracter et qui va renvoyer vrai si il est = au deuxieme parametre
+ */
+
+let tab=[234, 530, 502, 45,34,45, 99999999999999]
+let tab2=["Robert","Jean","Axel",23]
 console.log(comptetab(tab))
 console.log(sommetab(tab))
 console.log(maxtab(tab))
-
+console.log(mintab(tab))
+console.log(supcinq(tab, 1000))
 /** 
  * MIN DU TABLEAU
  * 
