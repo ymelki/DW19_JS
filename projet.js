@@ -1,6 +1,16 @@
 function entierAleatoire(min, max) {
  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+function maxtab(Tableau){
+    let REF_MAX=0
+    for (let i=0; i < Tableau.length; i++){
+        if ( Tableau[i] > REF_MAX    )  {  REF_MAX=Tableau[i]   }
+    }
+    return REF_MAX
+
+  
+}
 //Utilisation
 //La variable contient un nombre aléatoire compris entre 1 et 10
 var entier = entierAleatoire(1, 100);
@@ -66,3 +76,13 @@ console.table(tabfalea())
  * le nombre de personne majeur > 18 ANS
  * 
 */
+
+function maxtabalea(){
+    let tab=tabf() // GENERE UN TABLEAU QUI EST DANS LA VARIABLE TAB
+    console.table(tab)
+    let max=maxtab(tab) // dans la variable max j ecris la variable max de mon tableau
+    console.log(max);
+
+    // return maxtab(tabf())
+}
+maxtabalea()
