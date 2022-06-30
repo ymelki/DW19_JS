@@ -57,3 +57,12 @@ function tabfalea(){
 }
 
 console.table(tabfalea())
+
+
+/**
+ * 1 .Vous avez deja fait une Fonction qui generer des nombre aleatoire dans un tableau 
+ * EXO 1 Creer une fonction qui va utiliser la fonction deja creer precedemement en 1. vous aller renvoyer le nombre max du tableau
+ * EXO 2 reer une fonction qui va utiliser la fonction deja creer precedemement en 1. On va imaginer qu on a des âges. La fonction renvoie
+ * le nombre de personne majeur > 18 ANS
+ * 
+*/
