@@ -116,3 +116,22 @@ function nbmajeurs(){
 
 }
 nbmajeurs()
+
+/**
+ *  EXO 3. Creer une fonction qui va utiliser la fonction deja creer precedemement en 1. 
+ *  On va imaginer qu on a des prix HT.
+ *  La fonction va renvoyé  * le tableau avec les même prix en TTC : prix * 1.2
+ */
+
+function tab_ttc(){
+    let tab=tabf() // generer un tableau
+    console.table(tab)
+
+    let tab_ttc=new Array() // CREATION D UN NOUVEAU TABLEAU
+
+    for (let i = 0; i < tab.length; i ++ ){
+        tab_ttc[i]=tab[i]*1.2
+    }
+    console.table(tab_ttc)
+}
+tab_ttc()
