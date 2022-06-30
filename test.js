@@ -67,14 +67,6 @@ function supcinq(Tableau  , n ){
     }
 }
 
-/**
- * Fonction qui
- * 1 prend en parametre un nombre et qui va renvoyer vrai si il est positif  ou faux si il est negatif
- * 2 prend en parametre un nombre et qui va renvoyer vrai si il est pair  ou faux si il est impair
- * 3 prend en parametre une chaine de caracter et qui va renvoyer vrai si il est = à votre prenom
- * 4 prend en parametre une chaine de caracter et qui va renvoyer vrai si il est = au deuxieme parametre
- */
-
 let tab=[234, 530, 502, 45,34,45, 99999999999999]
 let tab2=["Robert","Jean","Axel",23]
 console.log(comptetab(tab))
@@ -106,3 +98,55 @@ console.log(supcinq(tab, 1000))
  * 
  */
 
+
+/**
+ * Fonction qui
+ * 1 prend en parametre un nombre et qui va renvoyer vrai si il est positif  ou faux si il est negatif
+ * 2 prend en parametre un nombre et qui va renvoyer vrai si il est pair  ou faux si il est impair
+ * 3 prend en parametre une chaine de caractere et qui va renvoyer vrai si il est = à votre prenom
+ * 4 prend en parametre une chaine de caractere et qui va renvoyer vrai si il est = au deuxieme parametre
+ */
+
+
+
+function ispositif(nb){
+    if (nb > 0 ){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+console.log(ispositif(4))
+console.log(ispositif(-20))
+
+function ispair(nb){
+    if ((nb%2===0)) { return true }
+    else { return false;}
+}
+console.log(ispair(4))
+console.log(ispair(3))
+
+
+
+function monprenom(prenom){
+    if (prenom=="Yoel"){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+console.log(monprenom("Yoel"))
+
+function prenomtest(prenom, test){
+    if (prenom==test){
+        return true
+    }
+    else {
+        return false
+    }
+}
+console.log(prenomtest("yoel","yoel"))
