@@ -12,6 +12,7 @@ function maxtab(Tableau){
   
 }
 //Utilisation
+// let tab=[234, 530, 502, 45,34,45, 99999999999999]
 //La variable contient un nombre aléatoire compris entre 1 et 10
 var entier = entierAleatoire(1, 100);
 console.log(entier)
@@ -86,3 +87,30 @@ function maxtabalea(){
     // return maxtab(tabf())
 }
 maxtabalea()
+
+
+function nbmajeurs(){
+    let toto=tabf()   // GENERER UN TABLEAU ALEATOIRE AVEC DES NOMBRES 1 ET 100
+
+    console.table(toto)
+    let tableausup18=new Array();
+
+    let compteur=0
+    // COMPTER LE NOMBRE AGE > 18
+
+    // parcourir le tableau
+    for(let i=0; i < toto.length; i ++ ) {
+
+    // SI SUPERIEUR > 18 
+       if (toto[i]>18) {
+         compteur=compteur+1
+         tableausup18[compteur]=toto[i]
+       }
+    }
+
+    console.log(compteur);
+    console.table(tableausup18)
+
+
+}
+nbmajeurs()
