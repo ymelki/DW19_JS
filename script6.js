@@ -101,6 +101,10 @@ console.table(ramenetab([34,234,55]))
  *  EXO 4 : l'élément minimum d'un tableau
  *  EXO 5 : Trouver le premier élément supérieur à 500
  *  BONUS : Copier les premiers éléments d'un tableau dont la somme fait au moins 500
-
  */
 
+/**
+ * BOUCLE 
+ * ACCUMULATION
+ * 
+ */
