@@ -32,8 +32,24 @@ function entierAleatoire(min, max) {
  */
     var aleatoire=entierAleatoire(1,100)
     var compteur =10 
- 
 
+function reinitialiser(){
+    document.getElementById("monboutton").disabled=false
+    document.getElementById("madiv").innerHTML=""
+    document.getElementById("madiv2").innerHTML="reponse propose : "
+    document.getElementById("madiv3").innerHTML=""
+    document.getElementById("montexte").value=""
+    var aleatoire=entierAleatoire(1,100)
+    compteur=10 
+ }
+ 
+function cas_3(){
+    document.getElementById("madiv").style.background="red"
+    document.getElementById("madiv").innerHTML=" JEU TERMINE ! "
+    document.getElementById("monboutton").disabled=true
+    document.getElementById("madiv3").innerHTML="<input type='button' id='reset' value='redemarer le jeu'>"
+    document.getElementById("reset").addEventListener("click", reinitialiser)
+} 
 
 function check(){
     console.log(compteur)
@@ -66,10 +82,8 @@ function check(){
             compteur--
         }
 
-        if (compteur < 1) {
-            document.getElementById("madiv").style.background="red"
-            document.getElementById("madiv").innerHTML=" JEU TERMINE ! "
-            document.getElementById("monboutton").disabled=true
+        if (compteur <= 1) {
+            cas_3()
         }
 
         
