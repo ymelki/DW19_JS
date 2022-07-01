@@ -43,12 +43,7 @@ function check(){
 
     // stocké dans une div les infos
     document.getElementById("madiv2").innerHTML += " " + document.getElementById("montexte").value
-
-
-
-
-
-
+ 
         if (  nb_user == aleatoire ) {
             document.getElementById("madiv").style.background="green"
             document.getElementById("madiv").innerHTML=" BIEN JOUE ! "
@@ -89,7 +84,12 @@ function check(){
  * 2  1. ECRIRE DANS LA DIV1 LES DIFFERENTS NOMBRES ENTRE PAR LE USER
  *    2. AU BOUT DE 10 NOMBRES => GAME OVER LE JEU NE MARCHE PLUS 
  * 
- * 
+ * 3 LORSQUE ON ATEINT LES 10 CHANCES ON A UN NOUVEAU BOUTON QUI REINITIALISE LE JEU    
+ * EFFACE LES DIV
+ * REMET ACTIF NOTRE BOUTON
+ * COMPTEUR = 0
+ * REINITIALISER NOTRE VARIABLE ALEATOIRE
+ * ...
  */
 
 // window.addEventListener("load" , alea)
