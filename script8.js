@@ -31,25 +31,53 @@ function entierAleatoire(min, max) {
 * ON A UN NOMBRE ALEATOIRE QUI EST TROUVE
  */
     var aleatoire=entierAleatoire(1,100)
+    var compteur =10 
  
 
 
 function check(){
+    console.log(compteur)
     // RECUPERER L ELEMENT DU TEXTE
     nb_user=parseInt(document.getElementById("montexte").value)
     console.log(nb_user);
 
+    // stocké dans une div les infos
+    document.getElementById("madiv2").innerHTML += " " + document.getElementById("montexte").value
+
+
+
+
+
+
         if (  nb_user == aleatoire ) {
+            document.getElementById("madiv").style.background="green"
+            document.getElementById("madiv").innerHTML=" BIEN JOUE ! "
             console.log("OK")
          }
 
+
+
        if (  nb_user > aleatoire ) {
-        console.log("c 'est moins ")
+            document.getElementById("madiv").style.background="red"
+            document.getElementById("madiv").innerHTML=" c 'est moins ! "
+            console.log("c 'est moins ")
+            compteur--
         }
 
         if (  nb_user < aleatoire ) {
+            document.getElementById("madiv").style.background="red"
+            document.getElementById("madiv").innerHTML=" c 'est plus ! "
             console.log("c 'est plus ")
+            compteur--
         }
+
+        if (compteur < 1) {
+            document.getElementById("madiv").style.background="red"
+            document.getElementById("madiv").innerHTML=" JEU TERMINE ! "
+            document.getElementById("monboutton").disabled=true
+        }
+
+        
         
     }
     
