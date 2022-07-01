@@ -274,3 +274,74 @@ function detecte_nom(tab){
  
 console.table(tableau1)
 console.log(detecte_nom(tableau1))
+
+
+
+function detecte_nom_param(tab  ,  prenom ){
+
+    // PARCOURIR LE TABLEAU
+    
+
+    for (let i = 0 ; i < tab.length; i ++ ) {
+       //LIRE CHAQUE ELEMENT DU TABLEAU
+
+       if (tab[i]==prenom) {
+           return true;
+       }
+       
+
+    }
+    return false;
+
+       // SI CEST MARQUE MON NOM JE RENVOIE TRUE
+
+
+
+       // DANS LE CAS OU ON PAS TROUVE ON RENVOE FALSE
+
+}
+console.log(detecte_nom_param(tableau1,"yoel"))
+console.log(detecte_nom_param(tableau1,"test"))
+
+/**
+ *  *  EX 3 . CREER UNE FONCTION AVEC UN PARAMETRE PRENANT UN TABLEAU ET UNE CHAINE DE CARACTERE
+ * QUI RENVOIE LA PREMIERE POSITION / LA CLE / L INDICE DE L EMPLACEMENT DANS LE TABLEAU CORRESPONDANT
+ * A LA CHAINE DE CARACTERE TROUVE. SI IL LA TROUVE PAS LA FONCTION RENVOIE 0
+ */
+function detecte_nom_param_cle(tab, prenom){
+    for (let i=0; i < tab.length; i++){
+        if ( tab[i] == prenom  ){
+            return i
+        }
+    }
+    return 0
+}
+
+
+console.log(detecte_nom_param_cle(tableau1,"Yoel"))
+
+/*
+* EX 4 . CREER UNE FONCTION AVEC UN PARAMETRE PRENANT UN TABLEAU ET UNE CHAINE DE CARACTERE
+* QUI RENVOIE LA LE NOMBRE DE FOIS OU IL RETROUVE CETTE CHAINE DE CARACTERE
+* 
+*/
+
+ tableau1 = ['Axel', "34", 'Robert', 'etc', "Yoel", 'Paul', 'Yoel', 'Paul'];
+
+function detecte_nom_param_nb(tab, prenom){
+
+    let compteur=0
+
+    for (let i=0; i < tab.length; i++){
+
+        if (prenom  ==   tab[i]){
+            compteur++
+        }
+        
+    }
+
+    return compteur;
+
+}
+
+console.log(detecte_nom_param_nb(tableau1,"Yoel"))
