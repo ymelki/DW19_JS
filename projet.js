@@ -193,3 +193,84 @@ console.table(tableau)
  * QUI RENVOIE UN TABLEAU CONTENANT L ENSEMBLE DES ELEMENTS DU TABLEAU SANS LES ELEMENTS CORRESPONDANT
  * A VOTRE CHAINE DE CARACTERE
  */
+ let tableaux=["larissa","angeline", "haudefa","jean","pierre","paul",]
+
+ let tableaux1=[  "haudefa" ]
+
+   tableaux = ['Axel', "34", 'Robert', 'etc', "Yoel", 'Paul', 'Yoel', 'Paul'];
+ console.table(tableaux1)
+
+
+ function mon(tableaux){
+ 
+          for(let i=0;i<tableaux.length;i++){
+ 
+                if(tableaux[i]=="Yoel"){ 
+                    return true
+                    }
+ 
+            }
+            
+        return false
+ 
+ }
+ 
+ 
+ console.log(mon(tableaux))
+
+
+ let tableau1 = ['Axel', "34", 'Robert', 'etc', "Yoel", 'Paul', 'Yoel', 'Paul'];
+ let tableau2 = [ "Yoel"];
+
+ function detecte_nom(tab){
+
+    // PARCOURIR LE TABLEAU
+    
+
+    for (let i = 0 ; i < tab.length; i ++ ) {
+       //LIRE CHAQUE ELEMENT DU TABLEAU
+
+       if (tab[i]=="Yoel") {
+           return true;
+       }
+       
+
+    }
+    return false;
+
+       // SI CEST MARQUE MON NOM JE RENVOIE TRUE
+
+
+
+       // DANS LE CAS OU ON PAS TROUVE ON RENVOE FALSE
+
+}
+ 
+
+
+function detecte_nom(tab){
+
+    // PARCOURIR LE TABLEAU
+    let compteur=0
+
+    for (let i = 0 ; i < tab.length; i ++ ) {
+       //LIRE CHAQUE ELEMENT DU TABLEAU
+
+       if (tab[i]=="Yoel") {
+           compteur++
+       }
+       
+
+    }
+    if (compteur > 0 ) {return true;} else {return false}
+
+       // SI CEST MARQUE MON NOM JE RENVOIE TRUE
+
+
+
+       // DANS LE CAS OU ON PAS TROUVE ON RENVOE FALSE
+
+}
+ 
+console.table(tableau1)
+console.log(detecte_nom(tableau1))
