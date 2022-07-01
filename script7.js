@@ -56,5 +56,21 @@ document.getElementById("monboutton").addEventListener("click", changecouleur)
  * LA COULEUR 
  * 
  * 
+ * 
+ * JEU DU PLUS OU MOINS
+ * 
+ * 
+ * 1 AU CHARGEMENT DE LA PAGE
+ * ON A UN NOMBRE ALEATOIRE QUI EST TROUVE
+ * 
+ * 2 AU CLIQUE SUR LE BOUTON GO 2 
+ * L ELEMENT HTML DU TEXTE EST ANALYSE PARSINT ON VERIFIE SI IL EST = AU NOMBRE ALEATOIRE OK VERT
+ *                                                                  > CEST MOINS ROUGE
+ *                                                                  < CEST PLUS ROUGE
+ * 
+ * UNE DIV INDIQUE L ENSEMBLE DES REPONSES
+ * 
+ * AU BOUT DE 10 FOIS IL VOUS MARQUE GAME OVER
+ * 
  */
 
